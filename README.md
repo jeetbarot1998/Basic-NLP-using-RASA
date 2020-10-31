@@ -1,2 +1,5 @@
 # Basic-NLP-using-RASA
-Using RASA to build a NLP parser for bots
+Using RASA to build a NLP parser for bots.
+1. The NLU.md file is a text formating type of file describing how user messages should be categorized.For eg: great, goodbye, find_time_zone etc.
+2. The stories.md is used to train models that are able to generalize to unseen conversation paths. These path can be imagined by the developer as the ways in which a user may interact with the system. Imagine yourself describing 2 persons talking, then describing the story to someone. Thi story or the conversations taking place between them is to be described in the stories.md file to train models that are able to generalize to unseen conversation path.
+3. domain.yml file is used to describe data. It broadly include templates for the things your bot can say while having conversation with the user. It has contents on what types of actions , intents, responses your bot is suppose to be ready/trained to attend. For eg: The intents, actions , response mentioned in "NLU.md", "stories.md", "actions.py" file are able to function due to the description of data being done in the domain.yml file.
